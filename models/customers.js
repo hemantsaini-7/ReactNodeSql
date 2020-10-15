@@ -23,3 +23,4 @@ const custSchema = new mongoose.Schema({
 const Customer = moongoose.Model('Customer',custSchema);
 
 module.exports.Customer = Customer;
+module.exports.validate = validateCustomer;

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-
+const Joi = require('joi');
+const express = require('express');
 const genSchema = new mongoose.Schema({
     name={
         type:String,
@@ -8,7 +9,11 @@ const genSchema = new mongoose.Schema({
         maxlength:50
     }
 });
-
 const Genre = moongoose.Model('Genre',genSchema);
 
+function validateGenre(req.body){
+
+}
+
 module.exports.Genre = Genre;
+module.exports.validate = validateGenre;
