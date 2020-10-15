@@ -11,6 +11,9 @@ const genSchema = new mongoose.Schema({
 });
 const Genre = moongoose.Model('Genre',genSchema);
 
+function validateGenre(req.body){
+
+}
 
 module.exports.Genre = Genre;
 module.exports.validate = validateGenre;
