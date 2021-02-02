@@ -1,18 +1,17 @@
 const mongoose = require('mongoose');
 
 const custSchema = new mongoose.Schema({
-    name={
+    name:{
         type:String,
         required:true,
         minlength:5,
         maxlength:50
     },
-    isGold={
+    isGold:{
         type:Boolean,
-        required:true,
         default:false
     },
-    phone={
+    phone:{
         type:Number,
         required:true,
         min:7,
@@ -20,7 +19,6 @@ const custSchema = new mongoose.Schema({
     }
 });
 
-const Customer = moongoose.Model('Customer',custSchema);
+const Customer = mongoose.model('Customer',custSchema);
 
 module.exports.Customer = Customer;
-module.exports.validate = validateCustomer;
