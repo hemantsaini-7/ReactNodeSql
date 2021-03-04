@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+}
+.logo {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 17px;
+}
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  margin: 0px 30px;
+  font-size: 17px;
+}
+.landing {
+  position: relative;
+  top: 80px;
+  padding: 100px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.card {
+  border: 3px solid blanchedalmond;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center;
+  text-align: center; */
+  width: 10%;
+}
+.bottom {
+  margin: 0px;
+  width: 10%;
+  background-color: brown;
+  text-align: center;
+}
